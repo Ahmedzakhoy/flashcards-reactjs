@@ -6,11 +6,23 @@ body {
   font-family: sans-serif;
   padding: 20px;
 }
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.App h2, .App h4 {
+  text-align: center;
+}
 
 .flashcards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .flashcards div {
@@ -24,6 +36,9 @@ body {
   text-align: center;
   padding: 20px;
   cursor: pointer;
+  width: 300px;
+  max-width: 90%;
+
 }
 
 div.selected {
